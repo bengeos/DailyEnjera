@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:text="ነገር ግን እግዚአብሔር…"/>
+                    <ImageView
+                        android:id="@+id/img_album_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/daily_enjera_2"
+                        android:scaleType="centerCrop" />
+                    <TextView
+                        android:id="@+id/txt_album_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_album_image"
+                        android:padding="10dp"
+                        android:text="“እግዚአብሔር ለክብሩ የተከላቸው የጽድቅ ዛፎች እንዲባሉ ለጽዮን አልቃሾች አደርግላቸው ዘንድ፥ በአመድ ፋንታ አክሊልን፥ በልቅሶም ፋንታ የደስታን ዘይት፥ በኀዘንም መንፈስ ፋንታ የምስጋናን መጐናጸፊያ እሰጣቸው ዘንድ ልኮኛል።” (ኢሳይያስ 61፡3)"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
